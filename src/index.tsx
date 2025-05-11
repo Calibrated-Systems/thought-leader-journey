@@ -20,7 +20,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 render(() => (
-  <Router root={Layout}>
+  <Router base="/thought-leader-journey" root={Layout}>
       <Route path="/" component={Home} />
       <Route path="/community" component={CommunityLifecycle} />
       <Route path="/development" component={ThoughtLeaderDevelopment} />
