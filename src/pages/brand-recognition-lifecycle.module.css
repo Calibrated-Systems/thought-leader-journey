@@ -1,0 +1,204 @@
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.introduction {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progressContainer {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.progressBar {
+  height: 14px;
+  background-color: #ddd;
+  border-radius: 7px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.progressPoint {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 2;
+  border: 2px solid white;
+}
+
+.progressLabel {
+  position: absolute;
+  top: 45px;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  width: 120px;
+}
+
+.levelContainer {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.levelHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.levelNumber {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-right: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.levelTitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.levelSubtitle {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 5px;
+  color: #555;
+}
+
+.contentSection {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.list {
+  padding-left: 20px;
+  margin: 0 0 10px 0;
+}
+
+.item {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.alignmentSection {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.alignmentTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.alignmentTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.tableHeader {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 12px 8px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+}
+
+.tableRow {
+  border-bottom: 1px solid #ddd;
+}
+
+.tableCell {
+  padding: 10px 8px;
+  font-size: 14px;
+}
+
+.footnote {
+  margin-top: 40px;
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .progressLabel {
+    font-size: 12px;
+    width: 80px;
+  }
+  
+  .alignmentTable {
+    display: block;
+    overflow-x: auto;
+  }
+}

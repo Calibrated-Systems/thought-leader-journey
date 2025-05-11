@@ -1,0 +1,66 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Phase colors */
+.phase1 { background-color: #FFEDD0; color: #d35400; }
+.phase2 { background-color: #FFDDC5; color: #e67e22; }
+.phase3 { background-color: #FFCBA8; color: #d35400; }
+.phase4 { background-color: #FFB592; color: #c0392b; }
+.phase5 { background-color: #FF9E7C; color: #a93226; }
+.inflection { background-color: #673AB7; color: white; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+}
