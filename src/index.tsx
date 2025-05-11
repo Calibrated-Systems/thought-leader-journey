@@ -9,7 +9,7 @@ import Home from './pages/home';
 import CommunityLifecycle from './pages/community-lifecycle';
 import ThoughtLeaderDevelopment from './pages/thought-leader-development';
 import BrandRecognitionLifecycle from './pages/brand-recognition-lifecycle';
-import CriticalInflectionPoints from './pages/critical-inflection-points';
+import InflectionPoints from './pages/inflection-points';
 
 const root = document.getElementById('root');
 
@@ -25,6 +25,6 @@ render(() => (
       <Route path="/community" component={CommunityLifecycle} />
       <Route path="/development" component={ThoughtLeaderDevelopment} />
       <Route path="/recognition" component={BrandRecognitionLifecycle} />
-      <Route path="/inflection-points" component={CriticalInflectionPoints} />
+      <Route path="/inflection-points" component={InflectionPoints} />
   </Router>
 ), root!);

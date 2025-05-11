@@ -1,5 +1,5 @@
 import { For, Show } from 'solid-js';
-import styles from './critical-inflection-points.module.css';
+import styles from './inflection-points.module.css';
 import PageTitle from '../components/page-title';
 
 // Define TypeScript interfaces
@@ -51,7 +51,7 @@ interface Phase {
   inflectionPoint?: InflectionPoint;
 }
 
-const ThoughtLeaderInflectionPoints = () => {
+const InflectionPoints = () => {
   // Phase and inflection point data
   const phases: Phase[] = [
     {
@@ -249,7 +249,7 @@ const ThoughtLeaderInflectionPoints = () => {
         </div>
 
         <div class={styles.introduction}>
-          <p>Beyond the gradual progression through developmental stages, the Thought Leader Journey features critical inflection points—transformative thresholds that fundamentally alter how you operate, scale, and create impact. These inflection points represent significant strategic decisions or structural transformations that, when navigated successfully, enable breakthrough growth and expanded influence.</p>
+          <p>Beyond the gradual progression through developmental stages, the Thought Leader Journey features critical inflection points — transformative thresholds that fundamentally alter how you operate, scale, and create impact. These inflection points represent significant strategic decisions or structural transformations that, when navigated successfully, enable breakthrough growth and expanded influence.</p>
           <p>Each inflection point requires letting go of familiar patterns and embracing new models of operation, identity, and relationship with your audience. Failure to navigate these transitions is the primary reason many thought leaders plateau despite having valuable ideas and initial traction.</p>
         </div>
 
@@ -469,4 +469,4 @@ const ThoughtLeaderInflectionPoints = () => {
   );
 };
 
-export default ThoughtLeaderInflectionPoints;
+export default InflectionPoints;
