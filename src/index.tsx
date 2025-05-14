@@ -6,6 +6,7 @@ import './index.css';
 
 import Layout from './components/layout';
 import Home from './pages/home';
+import EmbodiedInfluenceMetaLifecycle from './pages/embodied-influence';
 import CommunityLifecycle from './pages/community-lifecycle';
 import ThoughtLeaderDevelopment from './pages/thought-leader-development';
 import BrandRecognitionLifecycle from './pages/brand-recognition-lifecycle';
@@ -22,6 +23,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(() => (
   <Router base="/thought-leader-journey" root={Layout}>
       <Route path="/" component={Home} />
+      <Route path="/embodied-influence" component={EmbodiedInfluenceMetaLifecycle} />
       <Route path="/community" component={CommunityLifecycle} />
       <Route path="/development" component={ThoughtLeaderDevelopment} />
       <Route path="/recognition" component={BrandRecognitionLifecycle} />

@@ -1,0 +1,347 @@
+/* embodied-influence.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Journey Map */
+.journeyMapContainer {
+  position: relative;
+  margin: 60px 0;
+  padding-bottom: 60px;
+}
+
+.journeyLine {
+  position: absolute;
+  height: 4px;
+  background-color: #E2E8F0;
+  width: 100%;
+  top: 40px;
+  z-index: 0;
+}
+
+.phasesContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.phaseCircleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 85px;
+}
+
+.phaseCircleContainer:hover {
+  transform: scale(1.05);
+}
+
+.selectedPhase .phaseCircle {
+  border: 4px solid #4F46E5;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+}
+
+.phaseCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  z-index: 1;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.phaseNumber {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.phaseName {
+  font-size: 0.85rem;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 4px;
+}
+
+/* Thresholds */
+.thresholdsContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 24px;
+}
+
+.thresholdLabel {
+  font-size: 0.75rem;
+  color: #777;
+  font-style: italic;
+  width: 85px;
+  text-align: center;
+  margin-left: 42.5px; /* Half the width of a phase container to center between phases */
+}
+
+/* Phase Details */
+.phaseDetailContainer {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.phaseCard {
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.phaseCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.phaseCardContent {
+  flex-grow: 1;
+}
+
+.phaseTitle {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.phaseSubtitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.phaseIcon {
+  font-size: 4rem;
+  margin-left: 16px;
+}
+
+/* Sections */
+.section {
+  margin-top: 16px;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sectionList {
+  list-style-type: disc;
+  margin-left: 24px;
+}
+
+.sectionItem {
+  margin-bottom: 6px;
+}
+
+/* Threshold Container */
+.thresholdContainer {
+  margin-top: 24px;
+}
+
+.thresholdTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.thresholdText {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Persona Button */
+.personaButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.personaButton {
+  padding: 8px 16px;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.personaButton:hover {
+  background-color: #4338CA;
+}
+
+/* Persona Section */
+.personaContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personaHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.personaIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.personaTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.personaContent {
+  line-height: 1.6;
+}
+
+.personaParagraph {
+  margin-bottom: 16px;
+}
+
+/* No Selection State */
+.noSelectionContainer {
+  text-align: center;
+  padding: 40px;
+  background-color: #F9FAFB;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  margin-bottom: 40px;
+}
+
+.noSelectionIcon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.noSelectionText {
+  font-size: 1.25rem;
+  color: #6B7280;
+}
+
+/* Implementation Framework */
+.implementationContainer {
+  margin-top: 48px;
+  padding: 24px;
+  background-color: #EEF2FF;
+  border-radius: 12px;
+}
+
+.implementationTitle {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.implementationDesc {
+  margin-bottom: 24px;
+}
+
+.implementationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.implementationCard {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.implementationCardTitle {
+  font-weight: bold;
+  color: #4F46E5;
+  margin-bottom: 8px;
+}
+
+.implementationCardDesc {
+  color: #6B7280;
+}
+
+/* Footer */
+.footer {
+  margin-top: 48px;
+  padding: 24px 0;
+  text-align: center;
+  color: #6B7280;
+  font-size: 0.875rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .phasesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .journeyLine {
+    display: none;
+  }
+  
+  .thresholdsContainer {
+    display: none;
+  }
+  
+  .phaseCardHeader {
+    flex-direction: column;
+  }
+  
+  .phaseIcon {
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+  
+  .implementationGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -14,6 +14,12 @@ const Home = () => {
       </p>
       
       <div class={styles.cardContainer}>
+        <A href="/embodied-influence" class={styles.card}>
+          <h2 class={styles.cardTitle} style={{"color": "#4F46E5"}}>Embodied Influence</h2>
+          <p>
+            An experiential framework mapping the journey from insight to cultural integration, focused on the lived experience of embodying thought leadership values.
+          </p>
+        </A>
         <A href="/community" class={styles.card}>
           <h2 class={styles.cardTitle} style={{"color": "#d35400"}}>Community Lifecycle</h2>
           <p>

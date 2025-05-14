@@ -19,6 +19,14 @@ const Navigation = (props: NavigationProps) => {
           </A>
         </li>
         <li class={styles.navItem}>
+          <A href="/embodied-influence" class={styles.navLink} activeClass={styles.active}>
+            <span class={styles.icon}>✨</span>
+            <Show when={props.isExpanded}>
+              <span class={styles.linkText}>Embodied Influence</span>
+            </Show>
+          </A>
+        </li>
+        <li class={styles.navItem}>
           <A href="/community" class={styles.navLink} activeClass={styles.active}>
             <span class={styles.icon}>👥</span>
             <Show when={props.isExpanded}>
