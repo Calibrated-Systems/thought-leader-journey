@@ -41,6 +41,13 @@ const Home = () => {
           </p>
         </A>
         
+        <A href="/outcomes" class={styles.card}>
+          <h2 class={styles.cardTitle} style={{"color": "#3C87D7"}}>Traction-Based Outcomes</h2>
+          <p>
+            The specific traction-based outcomes that signal progression through each phase of the Thought Leader Journey.
+          </p>
+        </A>
+        
         <A href="/inflection-points" class={styles.card}>
           <h2 class={styles.cardTitle} style={{"color": "#673AB7"}}>Inflection Points</h2>
           <p>

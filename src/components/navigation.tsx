@@ -51,8 +51,16 @@ const Navigation = (props: NavigationProps) => {
           </A>
         </li>
         <li class={styles.navItem}>
-          <A href="/inflection-points" class={styles.navLink} activeClass={styles.active}>
+          <A href="/outcomes" class={styles.navLink} activeClass={styles.active}>
             <span class={styles.icon}>📊</span>
+            <Show when={props.isExpanded}>
+              <span class={styles.linkText}>Traction-Based Outcomes</span>
+            </Show>
+          </A>
+        </li>
+        <li class={styles.navItem}>
+          <A href="/inflection-points" class={styles.navLink} activeClass={styles.active}>
+            <span class={styles.icon}>🔬</span>
             <Show when={props.isExpanded}>
               <span class={styles.linkText}>Inflection Points</span>
             </Show>

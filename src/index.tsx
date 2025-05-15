@@ -11,6 +11,7 @@ import CommunityLifecycle from './pages/community-lifecycle';
 import ThoughtLeaderDevelopment from './pages/thought-leader-development';
 import BrandRecognitionLifecycle from './pages/brand-recognition-lifecycle';
 import InflectionPoints from './pages/inflection-points';
+import ThoughtLeaderTractionOutcomes from './pages/thought-leader-outcomes';
 
 const root = document.getElementById('root');
 
@@ -28,5 +29,6 @@ render(() => (
       <Route path="/development" component={ThoughtLeaderDevelopment} />
       <Route path="/recognition" component={BrandRecognitionLifecycle} />
       <Route path="/inflection-points" component={InflectionPoints} />
+      <Route path="/outcomes" component={ThoughtLeaderTractionOutcomes} />
   </Router>
 ), root!);
