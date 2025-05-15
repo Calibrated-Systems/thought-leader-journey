@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
+import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [solidPlugin()],
@@ -9,5 +10,11 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html')
+      }
+    },
+    outDir: 'dist'
   },
 });
